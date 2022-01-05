@@ -9,7 +9,7 @@ public class LocalRestaurantLoader {
         this.storeUrl = storeUrl;
     }
 
-    public void load(URL url) {
+    public void load() {
         System.out.println("Load from cache");
     }
 }

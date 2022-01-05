@@ -13,7 +13,7 @@ public class RemoteRestaurantImageDownloader {
         this.client = client;
     }
 
-    public void load(URL url) {
+    public void load() {
         client.get(url);
         System.out.println("Download restaurant image from database");
     }

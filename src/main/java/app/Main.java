@@ -1,9 +1,9 @@
 package app;
 
-import API.HTTPClientImplementation;
-import API.RemoteRestaurantImageDownloader;
-import API.RemoteRestaurantLoader;
-import Store.LocalRestaurantLoader;
+import api.HTTPClientImplementation;
+import api.RemoteRestaurantImageDownloader;
+import api.RemoteRestaurantLoader;
+import store.LocalRestaurantLoader;
 
 import java.net.URL;
 
@@ -25,5 +25,6 @@ public class Main {
         RemoteRestaurantImageDownloader imageDownloader = new RemoteRestaurantImageDownloader(remoteURL, client);
 
         remoteLoader.load();
+        localLoader.load();
     }
 }
