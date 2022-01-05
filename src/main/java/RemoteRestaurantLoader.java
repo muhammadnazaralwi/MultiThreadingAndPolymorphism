@@ -1,3 +1,5 @@
+import feature.HTTPClient;
+
 import java.net.URL;
 
 public class RemoteRestaurantLoader {
@@ -11,5 +13,6 @@ public class RemoteRestaurantLoader {
 
     public void load(URL url) {
         client.get(url);
+        System.out.println("Load from database");
     }
 }

@@ -1,15 +1,15 @@
+import feature.HTTPClient;
+
 import java.net.URL;
 
 public class LocalRestaurantLoader {
     URL storeUrl;
-    HTTPClient client;
 
-    public LocalRestaurantLoader(URL storeUrl, HTTPClient client) {
+    public LocalRestaurantLoader(URL storeUrl) {
         this.storeUrl = storeUrl;
-        this.client = client;
     }
 
     public void load(URL url) {
-        client.get(url);
+        System.out.println("Load from cache");
     }
 }
