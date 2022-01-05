@@ -1,3 +1,4 @@
+import API.RemoteRestaurantLoader;
 import feature.HTTPClient;
 import org.junit.jupiter.api.Test;
 
@@ -24,7 +25,7 @@ class RemoteRestaurantLoaderTest {
         HTTPClientSpy client = new HTTPClientSpy();
         RemoteRestaurantLoader sut = new RemoteRestaurantLoader(url, client);
 
-        sut.load(url);
+        sut.load();
 
         assertEquals(client.requestedURLs, List.of(url));
     }
@@ -35,8 +36,8 @@ class RemoteRestaurantLoaderTest {
         HTTPClientSpy client = new HTTPClientSpy();
         RemoteRestaurantLoader sut = new RemoteRestaurantLoader(url, client);
 
-        sut.load(url);
-        sut.load(url);
+        sut.load();
+        sut.load();
 
         assertEquals(client.requestedURLs, List.of(url, url));
     }

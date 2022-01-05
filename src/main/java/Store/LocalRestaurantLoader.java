@@ -1,3 +1,5 @@
+package Store;
+
 import feature.HTTPClient;
 
 import java.net.URL;

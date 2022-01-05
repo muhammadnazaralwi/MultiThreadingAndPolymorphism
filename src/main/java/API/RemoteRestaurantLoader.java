@@ -1,3 +1,5 @@
+package API;
+
 import feature.HTTPClient;
 
 import java.net.URL;
@@ -11,7 +13,7 @@ public class RemoteRestaurantLoader {
         this.client = client;
     }
 
-    public void load(URL url) {
+    public void load() {
         client.get(url);
         System.out.println("Load from database");
     }
