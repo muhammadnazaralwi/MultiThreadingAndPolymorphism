@@ -14,7 +14,7 @@ public class Main {
         HTTPClientImplementation client = new HTTPClientImplementation();
 
         try {
-            storeURL = new URL("/Users/alwi/Nazar/caches");
+            storeURL = new URL("file:///Users/alwi/Nazar/caches");
             remoteURL = new URL("https://any-url.com");
         } catch (Exception e) {
             System.err.println(e);
