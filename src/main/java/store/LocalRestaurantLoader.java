@@ -1,8 +1,10 @@
 package store;
 
+import feature.RestaurantLoader;
+
 import java.net.URL;
 
-public class LocalRestaurantLoader {
+public class LocalRestaurantLoader implements RestaurantLoader {
     URL storeUrl;
 
     public LocalRestaurantLoader(URL storeUrl) {

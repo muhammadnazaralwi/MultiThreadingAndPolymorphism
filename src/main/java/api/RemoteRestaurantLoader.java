@@ -1,10 +1,11 @@
 package api;
 
 import feature.HTTPClient;
+import feature.RestaurantLoader;
 
 import java.net.URL;
 
-public class RemoteRestaurantLoader {
+public class RemoteRestaurantLoader implements RestaurantLoader {
     URL url;
     HTTPClient client;
 
