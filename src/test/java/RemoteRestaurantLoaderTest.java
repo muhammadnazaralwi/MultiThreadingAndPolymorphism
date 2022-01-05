@@ -16,7 +16,7 @@ class RemoteRestaurantLoaderTest {
         HTTPClientSpy client = new HTTPClientSpy();
         RemoteRestaurantLoader sut = new RemoteRestaurantLoader(url, client);
 
-        assertEquals(client.loadCallCount, 0);
+        assertTrue(client.requestedURLs.isEmpty());
     }
 
     @Test
@@ -44,12 +44,10 @@ class RemoteRestaurantLoaderTest {
 }
 
 class HTTPClientSpy implements HTTPClient {
-    int loadCallCount = 0;
     List<URL> requestedURLs = new ArrayList<>();
 
     @Override
     public void get(URL url) {
-        loadCallCount++;
         requestedURLs.add(url);
     }
 }
