@@ -1,4 +1,4 @@
-import API.RemoteRestaurantLoader;
+import api.RemoteRestaurantLoader;
 import feature.HTTPClient;
 import org.junit.jupiter.api.Test;
 
