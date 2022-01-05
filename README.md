@@ -1,6 +1,6 @@
 # MultiThreadingAndPolymorphism
 
-RestaurantApp simulates behind the scene of getting data from database or local storage (cache). In this app, we learn how polymorphism can facilitate us to write automated test. And we also learn how to simulate download proses in different thread.
+RestaurantApp simulates behind the scene of getting data from database or local storage (cache). In this app, we learn how polymorphism can facilitate us to write automated test. And we also learn how to simulate image download process in different thread.
 
 ### Polymorphism
 `RestaurantLoader` dependency diagram:
