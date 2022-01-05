@@ -25,3 +25,14 @@ runnable = () -> {
     }
 };
 ```
+
+### Output
+```
+Try to hit the back-end
+Downloading...
+Load from database
+Load from cache
+Try to hit the back-end
+Download restaurant image from database
+Downloaded
+```
